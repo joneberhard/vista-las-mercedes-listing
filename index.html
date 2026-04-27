@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apartamento en Venta en Guatemala — Zona 16, Kanajuyú II</title>
+  <meta name="description" content="Apartamento excepcional en Guatemala, disponible para compra. Fotos, video y detalles dentro." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --cream: #F8F4ED;
+      --cream-dark: #EDE5D6;
+      --terracotta: #A8482E;
+      --terracotta-dark: #803319;
+      --sage: #7A8B6A;
+      --navy: #1F2D3D;
+      --gold: #C9A961;
+      --text: #2A2622;
+      --text-muted: #6B635B;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+    }
+
+    .hero {
+      position: relative;
+      height: 90vh;
+      min-height: 600px;
+      width: 100%;
+      background-color: var(--navy);
+      background-image: linear-gradient(rgba(31, 45, 61, 0.30), rgba(31, 45, 61, 0.55)), url('Small-%20vista%20las%20mercedes-45-06328.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--cream);
+    }
+    .hero-inner { max-width: 800px; padding: 0 24px; }
+    .hero .eyebrow {
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: var(--gold);
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      color: var(--cream);
+      margin-bottom: 16px;
+      line-height: 1.05;
+    }
+    .hero .location {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-style: italic;
+      color: var(--cream-dark);
+      margin-bottom: 32px;
+    }
+    .hero .cta {
+      display: inline-block;
+      padding: 14px 36px;
+      background: var(--terracotta);
+      color: var(--cream);
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid var(--terracotta);
+      transition: all 0.3s ease;
+    }
+    .hero .cta:hover { background: var(--terracotta-dark); border-color: var(--terracotta-dark); }
+
+    .stats {
+      background: var(--cream-dark);
+      padding: 32px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 48px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .stat { text-align: center; }
+    .stat .num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      color: var(--terracotta);
+      font-weight: 600;
+      line-height: 1;
+    }
+    .stat .label {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    section { padding: 100px 24px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-eyebrow {
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: var(--terracotta);
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 28px; }
+
+    .about { background: var(--cream); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .about-image {
+      aspect-ratio: 3/4;
+      background: var(--sage);
+      background-image: url('Small-%20vista%20las%20mercedes-1-.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .about-text p {
+      margin-bottom: 18px;
+      color: var(--text);
+      font-size: 1.05rem;
+    }
+    @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+    .gallery { background: var(--cream-dark); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 40px;
+    }
+    .gallery-grid .photo {
+      aspect-ratio: 4/3;
+      background: var(--sage);
+      background-size: cover;
+      background-position: center;
+    }
+    .gallery-grid .photo:nth-child(1) { background-image: url('Small-%20vista%20las%20mercedes-30-06296.jpg'); }
+    .gallery-grid .photo:nth-child(2) { background-image: url('Small-%20vista%20las%20mercedes-5-.jpg'); }
+    .gallery-grid .photo:nth-child(3) { background-image: url('Small-%20vista%20las%20mercedes-12-.jpg'); }
+    .gallery-grid .photo:nth-child(4) { background-image: url('Small-%20vista%20las%20mercedes-75-06466.jpg'); }
+    .gallery-grid .photo:nth-child(5) { background-image: url('Small-%20vista%20las%20mercedes-55-.jpg'); }
+    .gallery-grid .photo:nth-child(6) { background-image: url('Small-%20vista%20las%20mercedes-35-06302.jpg'); }
+    @media (max-width: 768px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    .video-section { background: var(--navy); color: var(--cream); }
+    .video-section .section-eyebrow { color: var(--gold); }
+    .video-section h2 { color: var(--cream); }
+    .video-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      background: #000;
+      margin-top: 40px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .video-wrap iframe, .video-wrap video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .details { background: var(--cream); }
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .detail {
+      padding: 24px;
+      background: var(--cream-dark);
+      border-left: 3px solid var(--terracotta);
+    }
+    .detail .label {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .detail .value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      color: var(--navy);
+    }
+
+    .contact { background: var(--terracotta); color: var(--cream); }
+    .contact .section-eyebrow { color: var(--gold); }
+    .contact h2 { color: var(--cream); }
+    .contact .lead {
+      max-width: 640px;
+      margin: 0 auto 48px;
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--cream-dark);
+    }
+    .form-wrap {
+      max-width: 600px;
+      margin: 0 auto;
+      background: var(--cream);
+      padding: 48px;
+      color: var(--text);
+    }
+    @media (max-width: 600px) { .form-wrap { padding: 28px; } }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+    .field { display: flex; flex-direction: column; }
+    .field label {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    .field input, .field textarea, .field select {
+      font-family: inherit;
+      font-size: 15px;
+      padding: 12px 14px;
+      border: 1px solid #D4CDC0;
+      background: var(--cream);
+      color: var(--text);
+      transition: border-color 0.2s;
+    }
+    .field input:focus, .field textarea:focus, .field select:focus {
+      outline: none;
+      border-color: var(--terracotta);
+    }
+    .radio-group { display: flex; gap: 18px; margin-top: 4px; }
+    .radio-group label {
+      letter-spacing: 0;
+      text-transform: none;
+      font-size: 14px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+    button[type=submit] {
+      width: 100%;
+      padding: 16px;
+      background: var(--navy);
+      color: var(--cream);
+      border: 0;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: background 0.2s;
+    }
+    button[type=submit]:hover { background: #15202d; }
+
+    footer {
+      background: var(--navy);
+      color: var(--cream-dark);
+      padding: 40px 24px;
+      text-align: center;
+      font-size: 13px;
+    }
+    footer .lang { margin-bottom: 12px; }
+    footer a { color: var(--gold); text-decoration: none; margin: 0 12px; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">En Venta · Ciudad de Guatemala</div>
+      <h1>Luz, jardín y una vista a la que vale la pena volver</h1>
+      <p class="location">Zona 16, Kanajuyú II — Ciudad de Guatemala</p>
+      <a href="#contact" class="cta">Consultar Sobre Esta Propiedad</a>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><div class="num">2</div><div class="label">Dormitorios</div></div>
+    <div class="stat"><div class="num">2</div><div class="label">Baños</div></div>
+    <div class="stat"><div class="num">Planta Baja</div><div class="label">+ Jardín Privado</div></div>
+    <div class="stat"><div class="num">$210K</div><div class="label">USD</div></div>
+  </div>
+
+  <section class="about">
+    <div class="container about-grid">
+      <div class="about-image"></div>
+      <div class="about-text">
+        <div class="section-eyebrow">El Hogar</div>
+        <h2>Un apartamento de escala boutique con su propio jardín privado.</h2>
+        <p>Este es el tipo de unidad que rara vez aparece en Ciudad de Guatemala: un apartamento de planta baja, dos dormitorios, dos baños, en un edificio pequeño y moderno, con ventanas de piso a techo y acceso directo a un jardín privado de grama. La luz entra por todas partes. Gabinetería de madera, encimeras de cuarzo y acabados modernos limpios atraviesan tanto la cocina como los baños.</p>
+        <p>Ubicado en <strong>Zona 16, Kanajuyú II</strong> — a minutos de <strong>Cayalá, la Universidad Rafael Landívar, Vista Hermosa, Cardales y el Colegio Austriaco</strong>. Una zona tranquila y consolidada, con la mejor oferta gastronómica, educativa y comercial de la ciudad a muy corta distancia.</p>
+        <p>Desde la propiedad, las tardes se abren hacia vistas amplias del atardecer sobre la silueta urbana y las montañas que rodean la ciudad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="container" style="text-align:center">
+      <div class="section-eyebrow">Los Espacios</div>
+      <h2>Un vistazo al interior.</h2>
+    </div>
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="container" style="text-align:center">
+      <div class="section-eyebrow">El Recorrido</div>
+      <h2>Mira por dentro.</h2>
+    </div>
+    <div class="container">
+      <div class="video-wrap">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--cream-dark);text-align:center;padding:32px;background:linear-gradient(135deg,#15202d 0%,#1F2D3D 100%);border:1px dashed rgba(201,169,97,0.3)">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.5vw,2rem);font-style:italic;color:var(--cream)">Video del recorrido</div>
+          <div style="font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold)">Próximamente</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="details">
+    <div class="container">
+      <div class="section-eyebrow">Los Detalles</div>
+      <h2>Lo que debes saber.</h2>
+      <div class="details-grid">
+        <div class="detail"><div class="label">Tipo</div><div class="value">Apartamento</div></div>
+        <div class="detail"><div class="label">Piso</div><div class="value">Planta Baja</div></div>
+        <div class="detail"><div class="label">Dormitorios</div><div class="value">2</div></div>
+        <div class="detail"><div class="label">Baños</div><div class="value">2</div></div>
+        <div class="detail"><div class="label">Exterior</div><div class="value">Jardín privado de grama</div></div>
+        <div class="detail"><div class="label">Mobiliario</div><div class="value">Amueblado</div></div>
+        <div class="detail"><div class="label">Moneda</div><div class="value">USD o GTQ</div></div>
+        <div class="detail"><div class="label">Estado</div><div class="value">Disponible — confirmar con vendedor</div></div>
+        <div class="detail"><div class="label">Metros Cuadrados</div><div class="value">Por confirmar</div></div>
+        <div class="detail"><div class="label">Parqueo</div><div class="value">Por confirmar</div></div>
+        <div class="detail"><div class="label">Año de Construcción</div><div class="value">~2022</div></div>
+        <div class="detail"><div class="label">Cuota de Mantenimiento</div><div class="value">Por confirmar</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container" style="text-align:center">
+      <div class="section-eyebrow">Hacer Contacto</div>
+      <h2>¿Interesado? Hablemos.</h2>
+      <p class="lead">Envíanos una breve nota y nos pondremos en contacto contigo, normalmente en menos de un día. Indícanos cómo prefieres comunicarte: correo, llamada o WhatsApp.</p>
+    </div>
+    <div class="form-wrap">
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="first_name">Nombre</label>
+            <input id="first_name" name="first_name" type="text" required />
+          </div>
+          <div class="field">
+            <label for="last_name">Apellido</label>
+            <input id="last_name" name="last_name" type="text" required />
+          </div>
+        </div>
+        <div class="field" style="margin-bottom:16px">
+          <label for="email">Correo Electrónico</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="field" style="margin-bottom:16px">
+          <label for="phone">Teléfono (con código de país, ej. +1, +502)</label>
+          <input id="phone" name="phone" type="tel" placeholder="+502 0000 0000" required />
+        </div>
+        <div class="field" style="margin-bottom:16px">
+          <label>Método de Contacto Preferido</label>
+          <div class="radio-group">
+            <label><input type="radio" name="preferred_contact" value="whatsapp" checked /> WhatsApp</label>
+            <label><input type="radio" name="preferred_contact" value="email" /> Correo</label>
+            <label><input type="radio" name="preferred_contact" value="phone" /> Llamada</label>
+          </div>
+        </div>
+        <div class="field" style="margin-bottom:16px">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4" placeholder="Cuéntanos un poco sobre lo que buscas, tus tiempos, cualquier detalle que debamos saber..."></textarea>
+        </div>
+        <button type="submit">Enviar Consulta</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div>© <span id="year"></span> · Consultas mediante el formulario de arriba</div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script>
+    // Form submission → opens prefilled WhatsApp message to Pablo Carias
+    (function () {
+      var form = document.getElementById('contactForm');
+      if (!form) return;
+      var PHONE = '50241546630'; // Pablo's WhatsApp (no + or spaces)
+      var labels = { whatsapp: 'WhatsApp', email: 'Correo', phone: 'Llamada' };
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var fd = new FormData(form);
+        var contact = labels[fd.get('preferred_contact')] || fd.get('preferred_contact') || '';
+        var parts = [
+          'Hola Pablo, estoy interesado en el apartamento de Vistas Las Mercedes.',
+          '',
+          'Nombre: ' + (fd.get('first_name') || '') + ' ' + (fd.get('last_name') || ''),
+          'Correo: ' + (fd.get('email') || ''),
+          'Teléfono: ' + (fd.get('phone') || ''),
+          'Método preferido: ' + contact
+        ];
+        var msg = (fd.get('message') || '').trim();
+        if (msg) { parts.push('', 'Mensaje:', msg); }
+        var url = 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(parts.join('\n'));
+        window.open(url, '_blank');
+      });
+    })();
+  </script>
+
+</body>
+</html>
