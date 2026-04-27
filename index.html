@@ -386,39 +386,26 @@
       <p class="lead">Envíanos una breve nota y nos pondremos en contacto contigo, normalmente en menos de un día. Indícanos cómo prefieres comunicarte: correo, llamada o WhatsApp.</p>
     </div>
     <div class="form-wrap">
-      <form id="contactForm">
-        <div class="form-row">
-          <div class="field">
-            <label for="first_name">Nombre</label>
-            <input id="first_name" name="first_name" type="text" required />
-          </div>
-          <div class="field">
-            <label for="last_name">Apellido</label>
-            <input id="last_name" name="last_name" type="text" required />
-          </div>
-        </div>
-        <div class="field" style="margin-bottom:16px">
-          <label for="email">Correo Electrónico</label>
-          <input id="email" name="email" type="email" required />
-        </div>
-        <div class="field" style="margin-bottom:16px">
-          <label for="phone">Teléfono (con código de país, ej. +1, +502)</label>
-          <input id="phone" name="phone" type="tel" placeholder="+502 0000 0000" required />
-        </div>
-        <div class="field" style="margin-bottom:16px">
-          <label>Método de Contacto Preferido</label>
-          <div class="radio-group">
-            <label><input type="radio" name="preferred_contact" value="whatsapp" checked /> WhatsApp</label>
-            <label><input type="radio" name="preferred_contact" value="email" /> Correo</label>
-            <label><input type="radio" name="preferred_contact" value="phone" /> Llamada</label>
-          </div>
-        </div>
-        <div class="field" style="margin-bottom:16px">
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" rows="4" placeholder="Cuéntanos un poco sobre lo que buscas, tus tiempos, cualquier detalle que debamos saber..."></textarea>
-        </div>
-        <button type="submit">Enviar Consulta</button>
-      </form>
+      <!-- GoHighLevel embed: "Vistas Las Mercedes — Inquiry" form in Carias Lopez Constuctores S.A. sub-account.
+           Submissions create a CRM contact automatically. Replaces the prior WhatsApp click-through mockup. -->
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/form/ss0momfXu5pO6cLocvwg"
+        style="width:100%;min-height:640px;border:none;border-radius:8px;display:block"
+        id="inline-ss0momfXu5pO6cLocvwg"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Vistas Las Mercedes — Inquiry"
+        data-height="auto"
+        data-layout-iframe-id="inline-ss0momfXu5pO6cLocvwg"
+        data-form-id="ss0momfXu5pO6cLocvwg"
+        title="Vistas Las Mercedes — Inquiry">
+      </iframe>
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
     </div>
   </section>
 
@@ -427,32 +414,8 @@
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </footer>
 
-  <script>
-    // Form submission → opens prefilled WhatsApp message to Pablo Carias
-    (function () {
-      var form = document.getElementById('contactForm');
-      if (!form) return;
-      var PHONE = '50241546630'; // Pablo's WhatsApp (no + or spaces)
-      var labels = { whatsapp: 'WhatsApp', email: 'Correo', phone: 'Llamada' };
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var fd = new FormData(form);
-        var contact = labels[fd.get('preferred_contact')] || fd.get('preferred_contact') || '';
-        var parts = [
-          'Hola Pablo, estoy interesado en el apartamento de Vistas Las Mercedes.',
-          '',
-          'Nombre: ' + (fd.get('first_name') || '') + ' ' + (fd.get('last_name') || ''),
-          'Correo: ' + (fd.get('email') || ''),
-          'Teléfono: ' + (fd.get('phone') || ''),
-          'Método preferido: ' + contact
-        ];
-        var msg = (fd.get('message') || '').trim();
-        if (msg) { parts.push('', 'Mensaje:', msg); }
-        var url = 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(parts.join('\n'));
-        window.open(url, '_blank');
-      });
-    })();
-  </script>
+  <!-- Note: prior WhatsApp click-through handler removed 2026-04-27 when form was swapped for GHL embed.
+       Submissions now route through GHL → CRM record. Pablo follows up manually via WhatsApp from there. -->
 
 </body>
 </html>
